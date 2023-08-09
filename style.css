@@ -1,0 +1,44 @@
+.root {
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    background-color: black;
+}
+
+.page-wrapper {
+    height: max-content;
+    background-color: black;
+    object-fit: cover;
+}
+
+.navbar {
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: darkgray solid 1px;
+
+}
+
+ul.nav {
+    color: white;
+    list-style: none;
+    width: 100%;
+    padding: 0 5px;
+    margin: 0;
+}
+ul.nav li {
+
+}
+li.name {
+    display: flex;
+    color: white;
+    justify-self: flex-start;
+    margin-right: 500px;
+    margin-left: 0;
+
+
+
+}
