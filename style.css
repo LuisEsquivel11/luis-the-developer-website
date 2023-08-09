@@ -14,7 +14,6 @@ body {
 }
 
 .navbar {
-    position: fixed;
     height: 55px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
@@ -38,7 +37,11 @@ li.name {
     justify-self: flex-start;
     margin-right: 500px;
     margin-left: 0;
+}
 
-
-
+.hero {
+    height: 50vh;
+    width: 90%;
+    align-self: center;
+    background-color: dimgray;
 }
