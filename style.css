@@ -14,10 +14,12 @@ body {
 }
 
 .navbar {
-    height: 55px;
+    height: 60px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
     border: darkgray solid 1px;
+    position: fixed;
+    z-index: 1;
 
 }
 
@@ -27,6 +29,7 @@ ul.nav {
     width: 100%;
     padding: 0 5px;
     margin: 0;
+
 }
 ul.nav li {
 
@@ -40,8 +43,44 @@ li.name {
 }
 
 .hero {
-    height: 50vh;
+    height: 60vh;
     width: 90%;
     align-self: center;
     background-color: dimgray;
+    background-image: url("img/background.jpg");
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: contain;
+
+}
+
+.name-title {
+    color: white;
+    margin-bottom: 125px;
+    /*text-align: center;*/
+
+}
+
+.name-title>h1 {
+    font-weight: bold;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.name-title>h2 {
+    margin: 0 45px;
+    font-size: 2rem;
+}
+
+.language-icons {
+    margin: 15px 0px;
+}
+.language-icons>svg {
+    filter: drop-shadow(0px 5px 10px rgba(0, 255, 247, 0.5));
+}
+
+main.container {
+    background-color: black;
+    height: 1000px;
 }
