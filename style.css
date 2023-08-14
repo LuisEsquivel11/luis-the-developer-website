@@ -4,21 +4,22 @@
 body {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    background-color: black;
+    background-color: #3f3f3f;
 }
 
 .page-wrapper {
     height: max-content;
-    background-color: black;
+    background-color: #3f3f3f;
     object-fit: cover;
 }
 
 .navbar {
     height: 60px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: darkgray solid 1px;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
     position: fixed;
+    padding: 0;
+    margin: 0;
     z-index: 1;
 
 }
@@ -27,27 +28,24 @@ ul.nav {
     color: white;
     list-style: none;
     width: 100%;
-    padding: 0 5px;
+    /*padding: 0 5px;*/
     margin: 0;
 
 }
 ul.nav li {
 
 }
-li.name {
+.name>p {
     display: flex;
     color: white;
-    justify-self: flex-start;
-    margin-right: 500px;
-    margin-left: 0;
+    margin-left: 75px;
 }
 
 .hero {
-    height: 60vh;
-    width: 90%;
+    height: 100vh;
+    width: 100%;
     align-self: center;
-    background-color: dimgray;
-    background-image: url("img/background.jpg");
+    background-color: #a20000;
     background-position: center;
     position: relative;
     background-attachment: fixed;
@@ -77,7 +75,7 @@ li.name {
     margin: 15px 0px;
 }
 .language-icons>svg {
-    filter: drop-shadow(0px 5px 10px rgba(0, 255, 247, 0.5));
+    /*filter: drop-shadow(0px 5px 10px rgba(0, 255, 247, 0.5));*/
 }
 
 main.container {
