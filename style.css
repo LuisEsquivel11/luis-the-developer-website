@@ -20,7 +20,7 @@ body {
     background-color: black;
     object-fit: cover;
 }
-
+/*================================NAVBAR====================================*/
 .side-nav {
     height: 100vh;
     width: 60px;
@@ -36,27 +36,42 @@ body {
     margin: 0;
     z-index: 999;
     border-bottom: solid 1px white;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);;
 }
 .navbar:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 ul {
-    color: white;
+    color: darkgray;
     list-style: none;
     width: 100%;
     /*padding: 0 5px;*/
     margin: 0;
 
 }
-/*======================== Navbar animations ===============================*/
+
 .nav-item {
-    animation: slideDown 0.5s ease-in-out forwards;
+    text-decoration-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
 }
-.navbar-items.show {
-    transition: transition 0.5s ease-in-out;
-    transform: translateY(0);
+.nav>li:hover {
+    border: solid 1px white;
+    color: white;
 }
+
+/*======================== Navbar animations ===============================*/
+/*.nav-item {*/
+/*    animation: slideDown 0.5s ease-in-out forwards;*/
+/*}*/
+/*.navbar-items.show {*/
+/*    transition: transition 0.5s ease-in-out;*/
+/*    transform: translateY(0);*/
+/*}*/
 @keyframes slideDown {
     to {
         transform: translateY(0);
@@ -65,48 +80,63 @@ ul {
 }
 /*=======================================================*/
 nav a {
- color: white;
+    color: darkgray;
     text-decoration: none;
 }
 
 li.contact:hover {
     cursor: pointer;
-}
-.name>p {
-    display: flex;
-    color: white;
-    margin-left: 75px;
-}
 
+}
+/*================================NAVBAR END====================================*/
+
+/*================================ HERO ========================================*/
 .hero {
     height: 100vh;
     width: 100%;
     align-self: center;
-    background-color: #a20000;
+    background-color: #5a5a5a;
     background-position: center;
     position: relative;
     background-attachment: fixed;
     background-size: contain;
 
 }
+.hero-image {
+    width: 500px;
+    height: 663px;
+    z-index: 998;
+    position: absolute;
+
+}
+.image-container {
+    height: 700px;
+    width: 700px;
+    margin-top: 150px;
+    border-radius: 360px;
+    /*background-color: black;*/
+    background: linear-gradient(to bottom, black, dimgray, darkgray);
+
+}
 
 .name-title {
     color: white;
-    margin-bottom: 125px;
-    /*text-align: center;*/
+    margin-top: 100px;
+    font-size: 5rem;
+    position: fixed;
 
 }
 
 .name-title>h1 {
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
 }
-
 .name-title>h2 {
-    margin: 0 45px;
-    font-size: 2rem;
+    margin: 0;
+    font-size: 3rem;
 }
+
 
 .language-icons {
     margin: 15px 0px;
@@ -118,8 +148,9 @@ li.contact:hover {
 main.container {
     background-color: black;
     height: 1000px;
+    overflow-x: scroll;
 }
-
+/*================================ HERO END ========================================*/
 .parent {
     display: flex;
     flex-direction: column;
@@ -168,12 +199,12 @@ main.container {
     left:0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
 
 }
 
 .modal .modal-container {
     padding: 20px;
     position: relative;
-    z-index:2;
+    z-index: 2;
 }

@@ -21,7 +21,6 @@ modalBackground.addEventListener('click', ()=> {
 });
     document.addEventListener("DOMContentLoaded", () => {
         const navbarItems = document.querySelector(".nav-item");
-        navbarItems.classList.;
     });
 
 
@@ -31,15 +30,21 @@ modalBackground.addEventListener('click', ()=> {
 
 
 
-//-----------------------------------Nav Bar ---------------------------------------//
+//-----------------------------------Nav Bar End ---------------------------------------//
+//-----------------------------------Hero Animations ------------------------------------//
+const nameTitle = document.querySelector('.name-title');
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const opacity = 1 - scrollPosition / 300;
+
+    nameTitle.style.opacity = opacity.toString();
+})
 
 
 
 
 
-
-
-
+//-----------------------------------Hero Animations End------------------------------------//
 
 
 
