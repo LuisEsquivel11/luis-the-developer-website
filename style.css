@@ -49,7 +49,7 @@ body {
     height: 100%;
     background-image: linear-gradient(90deg, #000, #fff);
     background-size: 200% 200%;
-    animation: shining 15s infinite linear;
+    animation: shining 10s infinite linear;
 }
 
 /*================================NAVBAR====================================*/
@@ -65,10 +65,11 @@ body {
     width: 100%;
     position: fixed;
     padding: 0;
-    margin: 0;
+    margin-top: 5px;
     z-index: 999;
-    border-bottom: solid 1px white;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);;
+    /*border-bottom: solid 1px white;*/
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 90px
 }
 .navbar:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -97,13 +98,13 @@ ul {
 }
 
 /*======================== Navbar animations ===============================*/
-/*.nav-item {*/
-/*    animation: slideDown 0.5s ease-in-out forwards;*/
-/*}*/
-/*.navbar-items.show {*/
-/*    transition: transition 0.5s ease-in-out;*/
-/*    transform: translateY(0);*/
-/*}*/
+.nav-item {
+    animation: slideDown 0.5s ease-in-out forwards;
+}
+.navbar-items.show {
+    transition: transition 0.5s ease-in-out;
+    transform: translateY(0);
+}
 @keyframes slideDown {
     to {
         transform: translateY(0);
@@ -133,13 +134,14 @@ li.contact:hover {
     background-attachment: fixed;
     background-size: contain;
 
+
 }
 .hero-image {
     width: 500px;
     height: 663px;
     z-index: 998;
     position: relative;
-
+    pointer-events: none;
 
 }
 .image-container {
@@ -149,8 +151,9 @@ li.contact:hover {
     /*margin-bottom: 500px;*/
     border-radius: 360px;
     /*background-color: black;*/
-    background: linear-gradient(to bottom, black, dimgray, darkgray);
-
+    background: linear-gradient(to bottom, #620000, red, darkred, black);
+    /*background: linear-gradient(to bottom, darkblue, blue, darkblue, black);*/
+    /*background: linear-gradient(to bottom, green, lime, green, black);*/
 }
 
 .name-title {
@@ -163,15 +166,21 @@ li.contact:hover {
 }
 
 .name-title>h1 {
-    color: white;
+    color: #dbdbdb;
     font-weight: bolder;
     font-size: 4rem;
     margin: 0;
+}
+.name-title>h1 span{
+    color: white;
 }
 .name-title>h2 {
     color: darkgray;
     margin: 0;
     font-size: 3rem;
+}
+.name-title>h2 span:hover {
+    color: white;
 }
 
 

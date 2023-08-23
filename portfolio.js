@@ -6,7 +6,7 @@
     window.addEventListener('load', () => {
     setTimeout(() => {
         loadingScreen.style.display = 'none';
-    }, 3000);
+    }, 100);
     });
 
 
