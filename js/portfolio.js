@@ -1,3 +1,4 @@
+
 (function() {
 "use strict"
 
@@ -14,7 +15,7 @@
 const dropdowns = document.querySelectorAll('li.parent');
 for(let dropdown of dropdowns) {
     let toggle = dropdown.querySelector('.toggle');
-    toggle.addEventListener('click', ()=>{
+    toggle.addEventListener('click', () => {
         dropdown.classList.toggle('show');
     });
 }
@@ -25,7 +26,7 @@ const hero = document.querySelector('.hero');
 contactLink.addEventListener('click', () => {
     contactModal.style.zIndex = 999;
 });
-modalBackground.addEventListener('click', ()=> {
+modalBackground.addEventListener('click', () => {
     contactModal.style.zIndex = -5;
 });
     document.addEventListener("DOMContentLoaded", () => {
@@ -115,8 +116,16 @@ window.addEventListener('scroll', () => {
 
 
 
-//-----------------------------------Hero Animations End------------------------------------//
+//-----------------------------------About Section Animations------------------------------------//
 
+    const spinner = document.getElementById("spinner-png");
+    let rotationAngle = 0;
+    function rotateImageOnScroll() {
+        const scrollDirection = event.deltaY > 0 ? 1 : -1;
+        rotationAngle += scrollDirection * 10; // Adjust rotation speed as needed
+        spinner.style.transform = `rotate(${rotationAngle}deg)`;
+    }
+    document.addEventListener("wheel", rotateImageOnScroll);
 
 
 

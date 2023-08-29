@@ -303,11 +303,12 @@ main.container {
     align-content: center;
     text-align: center;
 
-.spinner-png {
+#spinner-png {
         width: 275px;
         height: 275px;
         position: absolute;
         margin-left: 100px;
+        transition: transform 1s ease;
 
     }
 }
