@@ -302,21 +302,30 @@ main.container {
     justify-content: center;
     align-content: center;
     text-align: center;
+
+.spinner-png {
+        width: 275px;
+        height: 275px;
+        position: absolute;
+        margin-left: 100px;
+
+    }
 }
 .circle {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: solid black 1px;
     border-radius: 360px;
     align-content: center;
     justify-content: center;
     position: relative;
-    margin-left: 150px;
+    margin-left: 160px;
 
 
     .more {
-        margin-top: 90px;
+        margin-top: 65px;
     }
+
 }
 
 
