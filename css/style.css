@@ -142,42 +142,55 @@ li.contact:hover {
     z-index: 998;
     position: relative;
     pointer-events: none;
+    opacity: 0;
 
 }
-.image-container {
-    height: 700px;
-    width: 700px;
-    margin-top: -200px;
-    /*margin-bottom: 500px;*/
-    border-radius: 360px;
-    /*background-color: black;*/
-    background: linear-gradient(to bottom, #620000, red, darkred, black);
-    /*background: linear-gradient(to bottom, darkblue, blue, darkblue, black);*/
-    /*background: linear-gradient(to bottom, green, lime, green, black);*/
-}
+/*.image-container {*/
+/*    height: 700px;*/
+/*    width: 700px;*/
+/*    margin-top: -200px;*/
+/*    !*margin-bottom: 500px;*!*/
+/*    border-radius: 360px;*/
+/*    !*background-color: black;*!*/
+/*    background: linear-gradient(to bottom, #620000, red, darkred, black);*/
+/*    !*background: linear-gradient(to bottom, darkblue, blue, darkblue, black);*!*/
+/*    !*background: linear-gradient(to bottom, green, lime, green, black);*!*/
+/*}*/
 
 .name-title {
     margin-top: 125px;
     font-size: 5rem;
     position: fixed;
     z-index: 997;
-    opacity: .0;
+
 
 }
 
 .name-title>h1 {
-    color: #dbdbdb;
+    color: white;
     font-weight: bolder;
-    font-size: 4rem;
+    font-size: 7rem;
     margin: 0;
 }
 .name-title>h1 span{
+    font-weight: bolder;
     color: white;
 }
+
 .name-title>h2 {
-    color: darkgray;
+    color: #cfcfcf;
     margin: 0;
-    font-size: 3rem;
+    font-size: 5rem;
+
+    .third-line {
+        color: #a3a3a3;
+    }
+         .fourth-line {
+            color: #797979;
+        }
+            .fifth-line {
+                color: #505050;
+            }
 }
 .name-title>h2 span:hover {
     color: white;
