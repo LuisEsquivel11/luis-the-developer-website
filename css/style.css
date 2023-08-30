@@ -308,11 +308,12 @@ main.container {
         height: 275px;
         position: absolute;
         margin-left: 100px;
-        transition: transform 1s ease;
+        transition: transform .5s ease;
+
 
     }
 }
-.circle {
+.more-circle {
     width: 150px;
     height: 150px;
     border: solid black 1px;
@@ -321,8 +322,8 @@ main.container {
     justify-content: center;
     position: relative;
     margin-left: 160px;
-
-
+    transition: transform .5s ease;
+    cursor: pointer;
     .more {
         margin-top: 65px;
     }

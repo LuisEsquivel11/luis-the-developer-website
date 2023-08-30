@@ -119,15 +119,56 @@ window.addEventListener('scroll', () => {
 //-----------------------------------About Section Animations------------------------------------//
 
     const spinner = document.getElementById("spinner-png");
+    const moreBtn = document.querySelector('.more-circle')
     let rotationAngle = 0;
-    function rotateImageOnScroll() {
+    function rotateImageOnWheel() {
         const scrollDirection = event.deltaY > 0 ? 1 : -1;
-        rotationAngle += scrollDirection * 10; // Adjust rotation speed as needed
+        rotationAngle += scrollDirection * 3; // Adjust rotation speed as needed
         spinner.style.transform = `rotate(${rotationAngle}deg)`;
     }
-    document.addEventListener("wheel", rotateImageOnScroll);
+    document.addEventListener("wheel", rotateImageOnWheel);
 
 
+    document.addEventListener('mousemove', e => {
+        const attractionStrength = 1;
+        const maxDistance = 125;
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const rect = spinner.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const deltaX = mouseX - centerX;
+        const deltaY = mouseY - centerY;
+        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
 
+        if (distance < maxDistance) {
+            const translateX = deltaX * attractionStrength;
+            const translateY = deltaY * attractionStrength;
+            spinner.style.transform = `translate(${translateX}px, ${translateY}px)`;
+        } else {
+            spinner.style.transform = 'translate(0, 0)';
+        }
+    });
+
+    document.addEventListener('mousemove', e => {
+        const attractionStrength = .5;
+        const maxDistance = 150;
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const rect = moreBtn.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const deltaX = mouseX - centerX;
+        const deltaY = mouseY - centerY;
+        const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+
+        if (distance < maxDistance) {
+            const translateX = deltaX * attractionStrength;
+            const translateY = deltaY * attractionStrength;
+            moreBtn.style.transform = `translate(${translateX}px, ${translateY}px)`;
+        } else {
+            moreBtn.style.transform = 'translate(0, 0)';
+        }
+    });
 
 })();
