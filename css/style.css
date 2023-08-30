@@ -258,16 +258,17 @@ main.container {
 /*------------------------------------------ ABOUT -------------------------------------*/
 
 #about {
-    background-color: dimgray;
+    background-color: #5a5a5a;
     height: 100%;
     width: 100%;
 
 
-    .row {
-        height: 500px;
-        width: 1300px;
-        gap: 50px;
 
+     .row {
+        height: 500px;
+        width: 100%;
+        gap: 50px;
+        justify-content: space-between;
 
     }
 
@@ -286,8 +287,8 @@ main.container {
     width: 100%;
     color: white;
     text-align: left;
-    background-color: dimgray;
-    padding: 5px;
+    background-color: #5a5a5a;
+    padding: 100px;
     border-radius: 20px;
     justify-content: center;
 }
@@ -295,20 +296,23 @@ main.container {
     width: 100%;
     height: 100%;
     padding: 10px;
-    background-color: dimgray;
-    border: solid gray 1px;
+    background-color: #5a5a5a;
     border-radius: 20px;
     object-fit: cover;
     justify-content: center;
     align-content: center;
     text-align: center;
 
+
 #spinner-png {
         width: 275px;
         height: 275px;
         position: absolute;
-        margin-left: 100px;
+        /*margin-left: 100px;*/
         transition: transform .5s ease;
+        display: flex;
+    align-self: center;
+    z-index: 100;
 
 
     }
@@ -316,16 +320,17 @@ main.container {
 .more-circle {
     width: 150px;
     height: 150px;
-    border: solid black 1px;
+    /*border: solid black 1px;*/
     border-radius: 360px;
-    align-content: center;
-    justify-content: center;
+    align-self: center;
+    justify-self: center;
     position: relative;
-    margin-left: 160px;
     transition: transform .5s ease;
     cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
     .more {
-        margin-top: 65px;
+        margin-top: 45px;
     }
 
 }
