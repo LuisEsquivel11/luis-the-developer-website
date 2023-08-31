@@ -72,7 +72,7 @@ body {
     /*border-radius: 90px;*/
 }
 .navbar:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -166,8 +166,12 @@ li.contact:hover {
 .name-title {
     margin-top: 150px;
     font-size: 5rem;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 997;
+    /*border: solid white 1px;*/
+    padding: 50px;
+    /*box-shadow: 3px 20px 30px rgba(0, 0, 0, 1);*/
+
 
 }
 
@@ -214,14 +218,18 @@ li.contact:hover {
                 color: #505050;
             }
 }
+
+.line {
+    transition: padding 0.5s ease, margin .5s ease, background-color .3s ease, border .3s ease;
+
+}
 .name-title>h2 span:hover {
     color: white;
     background-color: black;
     border-radius: 30px;
-    padding: 10px;
+    padding: 18px;
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(333, 333, 333, .2);
-    /*transition: transition 1s ease-in-out ;*/
 }
 
 
