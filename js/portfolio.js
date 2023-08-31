@@ -33,7 +33,13 @@ modalBackground.addEventListener('click', () => {
         const navbarItems = document.querySelector(".nav-item");
     });
 
+    const navButton = document.querySelector('.nav-item');
+    navButton.addEventListener('hover', () => {
 
+    })
+function graduallyIncreaseProperty() {
+
+}
 
 //-----------------------------------Nav Bar End ---------------------------------------//
 //-----------------------------------Hero Animations ------------------------------------//
@@ -47,6 +53,13 @@ window.addEventListener('scroll', () => {
 
     nameTitle.style.opacity = opacity.toString();
 })
+    const firstLine = document.querySelector('.first-line')
+    window.addEventListener('scroll', () => {
+       const scrollPosition = window.scrollY;
+       const position = 1 + scrollPosition ;
+
+       firstLine.style.marginBottom = `${position.toString()}px`
+    });
 const image = document.querySelector('.hero-image')
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;

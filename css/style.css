@@ -93,10 +93,15 @@ ul {
     height: 50px;
 }
 .nav>li:hover {
-    border: solid 1px white;
-    color: white;
-}
+    border: solid 1px darkgray;
+    border-radius: 45px;
+    margin: 75px;
 
+}
+.nav>li {
+    transition: margin 0.5s ease;
+
+}
 /*======================== Navbar animations ===============================*/
 .nav-item {
     animation: slideDown 0.5s ease-in-out forwards;
@@ -159,11 +164,10 @@ li.contact:hover {
 /*}*/
 
 .name-title {
-    margin-top: 125px;
+    margin-top: 150px;
     font-size: 5rem;
     position: fixed;
     z-index: 997;
-
 
 }
 
@@ -173,27 +177,32 @@ li.contact:hover {
     font-size: 7rem;
     margin: 0;
 }
+
 .luis {
     font-weight: bolder;
     color: white;
     text-shadow: 3px 5px 10px rgba(0, 0, 0, 1);
 }
 
-
 .name-title>h1 span:hover {
     background-color: black;
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(333, 333, 333, .2);
-    .luis {
-        color: red;
-    }
+
+.luis {
+    color: red;
 }
+
+}
+
+
 
 .name-title>h2 {
     color: #cfcfcf;
     margin: 0;
     font-size: 5rem;
+    transition: margin .5s ease;
 
     .third-line {
         color: #a3a3a3;
@@ -210,6 +219,7 @@ li.contact:hover {
     background-color: black;
     border-radius: 30px;
     padding: 10px;
+    margin: 10px;
     box-shadow: 0px 0px 10px rgba(333, 333, 333, .2);
     /*transition: transition 1s ease-in-out ;*/
 }
@@ -218,6 +228,7 @@ li.contact:hover {
 .language-icons {
     margin: 15px 0px;
 }
+
 .language-icons>svg {
     /*filter: drop-shadow(0px 5px 10px rgba(0, 255, 247, 0.5));*/
 }
