@@ -70,13 +70,13 @@ body {
     /*border-bottom: solid 1px white;*/
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
     /*border-radius: 90px;*/
+    transition: background-color .4s ease;
 }
 .navbar:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 ul {
-    color: darkgray;
     list-style: none;
     width: 100%;
     /*padding: 0 5px;*/
@@ -85,7 +85,7 @@ ul {
 }
 
 .nav-item {
-    text-decoration-color: darkgrey;
+    text-decoration-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,18 +93,21 @@ ul {
     height: 50px;
 }
 .nav>li:hover {
-    border: solid 1px darkgray;
-    border-radius: 45px;
+    /*border: solid 1px darkgray;*/
+    border-radius: 20px;
     margin: 75px;
+    background-color: black;
+
 
 }
 .nav>li {
-    transition: margin 0.5s ease;
-
+    transition: margin 0.5s ease, background-color .2s ease;
+    text-decoration-color: white;
 }
 /*======================== Navbar animations ===============================*/
 .nav-item {
     animation: slideDown 0.5s ease-in-out forwards;
+    text-decoration-color: white;
 }
 .navbar-items.show {
     transition: transition 0.5s ease-in-out;
@@ -118,8 +121,11 @@ ul {
 }
 /*=======================================================*/
 nav a {
-    color: darkgray;
     text-decoration: none;
+    color: gray;
+}
+nav a:hover {
+    color: white;
 }
 
 li.contact:hover {
