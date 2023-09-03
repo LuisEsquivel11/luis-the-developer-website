@@ -132,6 +132,7 @@ li.contact:hover {
     cursor: pointer;
 
 }
+
 /*================================NAVBAR END====================================*/
 
 /*================================ HERO ========================================*/
@@ -186,6 +187,9 @@ li.contact:hover {
     font-weight: bolder;
     font-size: 7rem;
     margin: 0;
+    flex-flow: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .luis {
@@ -213,7 +217,9 @@ li.contact:hover {
     margin: 0;
     font-size: 5rem;
     transition: margin .5s ease;
-
+    flex-flow: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
     .third-line {
         color: #a3a3a3;
     }
@@ -252,6 +258,7 @@ main.container {
     height: 1000px;
     overflow-x: scroll;
 }
+
 /*================================ HERO END ========================================*/
 .parent {
     display: flex;
@@ -401,4 +408,27 @@ main.container {
 .language-icons {
 
 
+}
+
+/*==================================== Media Queries =================================*/
+
+/* Large */
+@media screen and (min-width: 992px) and (max-width: 1250px ) {
+/*======================================NAVBAR ===================================*/
+
+}
+
+/* Medium */
+@media screen and (min-width: 768px) and (max-width: 991px ) {
+/*======================================NAVBAR ===================================*/
+}
+
+/* Small */
+@media screen and (min-width: 481px) and (max-width: 767px ) {
+/*======================================NAVBAR ===================================*/
+}
+
+/* XSmall */
+@media screen and (max-width: 480px ) {
+/*======================================NAVBAR ===================================*/
 }
