@@ -67,10 +67,12 @@ body {
     padding: 0;
     margin-top: 0;
     z-index: 999;
+    flex-shrink: 1;
     /*border-bottom: solid 1px white;*/
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
     /*border-radius: 90px;*/
     transition: background-color .4s ease;
+
 }
 .navbar:hover {
     background-color: rgba(0, 0, 0, 0.3);
@@ -188,7 +190,6 @@ li.contact:hover {
     font-size: 7rem;
     margin: 0;
     flex-flow: nowrap;
-    overflow: hidden;
     white-space: nowrap;
 }
 
@@ -218,7 +219,6 @@ li.contact:hover {
     font-size: 5rem;
     transition: margin .5s ease;
     flex-flow: nowrap;
-    overflow: hidden;
     white-space: nowrap;
     .third-line {
         color: #a3a3a3;
@@ -415,20 +415,38 @@ main.container {
 /* Large */
 @media screen and (min-width: 992px) and (max-width: 1250px ) {
 /*======================================NAVBAR ===================================*/
-
+    nav ul {
+        margin-right: 50px;
+    }
+    nav img {
+        margin-left: 50px
+    }
+/*====================================== HERO =====================================*/
+    .name-title h1 {
+            font-size: 6rem;
+    }
+    .name-title h2 {
+        font-size: 3.5rem;
+    }
 }
+
 
 /* Medium */
 @media screen and (min-width: 768px) and (max-width: 991px ) {
 /*======================================NAVBAR ===================================*/
+    .navbar {
+        flex-shrink: 1;
+    }
 }
 
 /* Small */
 @media screen and (min-width: 481px) and (max-width: 767px ) {
 /*======================================NAVBAR ===================================*/
+
 }
 
 /* XSmall */
 @media screen and (max-width: 480px ) {
 /*======================================NAVBAR ===================================*/
+
 }
