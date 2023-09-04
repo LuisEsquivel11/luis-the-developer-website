@@ -93,6 +93,7 @@ ul {
     justify-content: center;
     width: 100px;
     height: 50px;
+    flex-shrink: 1;
 }
 .nav>li:hover {
     /*border: solid 1px darkgray;*/
@@ -177,6 +178,7 @@ li.contact:hover {
     font-size: 5rem;
     /*position: fixed;*/
     z-index: 997;
+    flex-shrink: 1;
     /*border: solid white 1px;*/
     padding: 50px;
     /*box-shadow: 3px 20px 30px rgba(0, 0, 0, 1);*/
@@ -191,6 +193,7 @@ li.contact:hover {
     margin: 0;
     flex-flow: nowrap;
     white-space: nowrap;
+    flex-shrink: 1;
 }
 
 .luis {
@@ -220,6 +223,8 @@ li.contact:hover {
     transition: margin .5s ease;
     flex-flow: nowrap;
     white-space: nowrap;
+    flex-shrink: 1;
+
     .third-line {
         color: #a3a3a3;
     }
@@ -454,10 +459,39 @@ main.container {
 @media screen and (min-width: 481px) and (max-width: 767px ) {
 /*======================================NAVBAR ===================================*/
 
+/*======================================== HERO ==================================*/
+    .name-title {
+        width: 100vw;
+        flex-wrap: wrap;
+        object-fit: contain;
+        margin: 0;
+    }
+    .name-title h1 {
+        font-size: 3rem;
+        text-align: center
+    }
+    .name-title h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 /* XSmall */
 @media screen and (max-width: 480px ) {
 /*======================================NAVBAR ===================================*/
 
+/*======================================== HERO ==================================*/
+    .page-wrapper {
+        width: 100%;
+    }
+    .name-title h1 {
+        font-size: 3rem;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .name-title h2 {
+        font-size: 2rem;
+        text-align: center;
+        flex-wrap: wrap;
+    }
 }
