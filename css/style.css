@@ -54,7 +54,7 @@ body {
 
 /*================================NAVBAR====================================*/
 .menu-toggle {
-    /*display: none;*/
+    display: none;
     flex-direction: column;
     cursor: pointer;
     position: absolute;
@@ -69,7 +69,7 @@ body {
     background-color: white;
     margin: 4px 0;
     /*position: absolute;*/
-    transition: transform .3s ease, top .3s ease;
+    transition: transform .5s ease, top .5s ease;
 }
 .top-bar-click {
     transform: rotate(45deg);
@@ -470,11 +470,16 @@ main.container {
 /* Medium */
 @media screen and (min-width: 768px) and (max-width: 991px ) {
 /*======================================NAVBAR ===================================*/
-    nav ul {
-        margin-right: 50px;
+    .menu-toggle {
+        display: unset;
+        right: 1%;
     }
-    nav img {
-        margin-left: 25px
+    .name-logo {
+        position: absolute;
+        left: 1%;
+    }
+    .nav {
+        display: none;
     }
     /*==================================== HERO ====================================*/
     .name-title h1 {
@@ -489,7 +494,17 @@ main.container {
 /* Small */
 @media screen and (min-width: 481px) and (max-width: 767px ) {
 /*======================================NAVBAR ===================================*/
-
+    .menu-toggle {
+        display: unset;
+        right: 1%;
+    }
+    .name-logo {
+        position: absolute;
+        left: 1%;
+    }
+    .nav {
+        display: none;
+    }
 /*======================================== HERO ==================================*/
     .name-title {
         width: 100vw;
@@ -510,7 +525,17 @@ main.container {
 /* XSmall */
 @media screen and (max-width: 480px ) {
 /*======================================NAVBAR ===================================*/
-
+    .menu-toggle {
+        display: unset;
+        right: 1%;
+    }
+    .name-logo {
+        position: absolute;
+        left: 1%;
+    }
+    .nav {
+        display: none;
+    }
 /*======================================== HERO ==================================*/
     .name-title {
         padding: 0;
