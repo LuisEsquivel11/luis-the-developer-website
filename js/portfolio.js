@@ -11,7 +11,7 @@
     });
 
 
-//-----------------------------------Nav Bar ---------------------------------------//
+//----------------------------------Nav Bar ---------------------------------------//
 const dropdowns = document.querySelectorAll('li.parent');
 for(let dropdown of dropdowns) {
     let toggle = dropdown.querySelector('.toggle');
@@ -37,9 +37,15 @@ modalBackground.addEventListener('click', () => {
     navButton.addEventListener('hover', () => {
 
     })
-function graduallyIncreaseProperty() {
+// ----------------------------- Sandwich menu -------------------------------------------//
+    const topBar = document.querySelector('.top-bar');
+    const bottomBar = document.querySelector('.bottom-bar')
+    document.addEventListener('click', () => {
+       topBar.classList.toggle('top-bar-click')
+       bottomBar.classList.toggle('bottom-bar-click')
+    });
 
-}
+
 
 //-----------------------------------Nav Bar End ---------------------------------------//
 //-----------------------------------Hero Animations ------------------------------------//

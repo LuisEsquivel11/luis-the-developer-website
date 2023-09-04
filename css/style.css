@@ -53,6 +53,36 @@ body {
 }
 
 /*================================NAVBAR====================================*/
+.menu-toggle {
+    /*display: none;*/
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    z-index: 999;
+    margin-right: 50px
+
+}
+.bar {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+    /*position: absolute;*/
+    transition: transform .3s ease, top .3s ease;
+}
+.top-bar-click {
+    transform: rotate(45deg);
+
+}
+.bottom-bar-click {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 3%
+}
+
+/*-------------------------- sandwich menu ^-----------------------------*/
+
 .side-nav {
     height: 100vh;
     width: 60px;
@@ -77,6 +107,7 @@ body {
 .navbar:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 ul {
     list-style: none;
@@ -464,7 +495,7 @@ main.container {
         width: 100vw;
         flex-wrap: wrap;
         object-fit: contain;
-        margin: 0;
+        padding: 0;
     }
     .name-title h1 {
         font-size: 3rem;
@@ -481,8 +512,10 @@ main.container {
 /*======================================NAVBAR ===================================*/
 
 /*======================================== HERO ==================================*/
-    .page-wrapper {
-        width: 100%;
+    .name-title {
+        padding: 0;
+        align-content: center;
+
     }
     .name-title h1 {
         font-size: 3rem;
