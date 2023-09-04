@@ -434,9 +434,20 @@ main.container {
 /* Medium */
 @media screen and (min-width: 768px) and (max-width: 991px ) {
 /*======================================NAVBAR ===================================*/
-    .navbar {
-        flex-shrink: 1;
+    nav ul {
+        margin-right: 50px;
     }
+    nav img {
+        margin-left: 25px
+    }
+    /*==================================== HERO ====================================*/
+    .name-title h1 {
+        font-size: 5rem;
+    }
+    .name-title h2 {
+        font-size: 3.5rem;
+    }
+
 }
 
 /* Small */
