@@ -38,9 +38,10 @@ modalBackground.addEventListener('click', () => {
 
     })
 // ----------------------------- Sandwich menu -------------------------------------------//
+    const menuToggle = document.querySelector('.menu-toggle')
     const topBar = document.querySelector('.top-bar');
     const bottomBar = document.querySelector('.bottom-bar')
-    document.addEventListener('click', () => {
+    menuToggle.addEventListener('click', () => {
        topBar.classList.toggle('top-bar-click')
        bottomBar.classList.toggle('bottom-bar-click')
     });
